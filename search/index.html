@@ -2,5 +2,8 @@
     var url_string = window.location.href
     var url = new URL(url_string);
     var q = url.searchParams.get("q");
-    window.location.replace("http://google.com/search?btnI&q="+q);
-    </script>
+    var target = "http://google.com/search?btnI&q="+q
+    // window.location.replace(target);
+    window.open(target, '_blank');
+
+</script>
